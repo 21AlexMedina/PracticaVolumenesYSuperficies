@@ -5,8 +5,8 @@ package Clases;
  */
 public class Cilindro {
 
-	int radio;
-	int altura;
+	double radio;
+	double altura;
 
 	/**
 	 * Un constructor que recibe los parametros de radio y altura
@@ -14,7 +14,7 @@ public class Cilindro {
 	 * @param radio
 	 * @param altura
 	 */
-	public Cilindro(int radio, int altura) {
+	public Cilindro(double radio, double altura) {
 		this.radio = radio;
 		this.altura = altura;
 	}
@@ -34,7 +34,7 @@ public class Cilindro {
 	 * @return double
 	 */
 	public double superficie() {
-		double resultado = (2 * 3.1416 * this.radio * this.radio) + (2 * 3.1416 * this.radio * this.altura);
+		double resultado = (2 * 3.14 * this.radio * this.radio) + (2 * 3.14 * this.radio * this.altura);
 		return resultado;
 	}
 
@@ -44,7 +44,7 @@ public class Cilindro {
 	 * @return double
 	 */
 	public double volumen() {
-		double area = 3.1416 * this.radio * this.radio;
+		double area = 3.14 * this.radio * this.radio;
 		double volumen = area * this.altura;
 		return volumen;
 	}
